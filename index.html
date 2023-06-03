@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <!-- link the style sheet for CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- adding the JavaScript -->
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!-- header-part -->
+    <div class="header">
+        <h2>Let's Start calculate</h2>
+    </div>
+    <!-- main-container -->
+    <div class="cal">
+        <div class="t1">
+            <table border=1 id="a">
+                <div class="one">
+                    <tr>
+                        <td colspan=3> <input type="text" name="" id="b"> </td>
+                        <td class="c"> <input type="button" value="C" onclick="ca()"> </td>
+                    </tr>
+                </div>
+
+                <div class="two">
+                    <tr class="c">
+                        <td> <input type=button value=1 id="as" onclick="solve('1')"></td>
+                        <td> <input type=button value=2 id="qw" onclick="solve('2')"></td>
+                        <td> <input type=button value=3 id="er" onclick="solve('3')"></td>
+                        <td> <input type=button value=/ id="div" onclick="solve('/')"> </td>
+                    </tr>
+                </div>
+
+                <div class="three">
+                    <tr class="c">
+                        <td> <input type=button value=4 id="ui" onclick="solve('4')"> </td>
+                        <td> <input type=button value=5 id="op" onclick="solve('5')"> </td>
+                        <td> <input type=button value=6 id="p" onclick="solve('6')"> </td>
+                        <td> <input type=button value=* id="mul" onclick="solve('*')"> </td>
+                    </tr>
+                </div>
+
+                <div class="four">
+                    <tr class="c">
+                        <td> <input type=button value=7 id="lk" onclick="solve('7')"> </td>
+                        <td> <input type=button value=8 id="jh" onclick="solve('8')"> </td>
+                        <td> <input type=button value=9 id="km" onclick="solve('9')"> </td>
+                        <td> <input type=button value=- id="mis" onclick="solve('-')"> </td>
+                    </tr>
+                </div>
+
+                <div class="five">
+                    <tr class="c">
+                        <td> <input type=button value=0 id="zero" onclick="solve('0')"> </td>
+                        <td> <input type=button value=. id="bv" onclick="solve('.')"> </td>
+                        <td> <input type=button value="=" id="xx" onclick="result()"> </td>
+                        <td> <input type=button value=+ id="add" onclick="solve('+')"> </td>
+                    </tr>
+                </div>
+
+                <div class="six">
+                    <tr class="d">
+                        <td colspan="4"> <input type=button value=D id="qwa" onclick="d()"></td>
+                    </tr>
+                </div>
+        </div>
+        </table>
+    </div>
+</body>
+
+</html>
